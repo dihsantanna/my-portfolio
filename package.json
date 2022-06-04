@@ -9,7 +9,7 @@
     "lint": "npx eslint ./src --ext .{ts,js,tsx,jsx}",
     "compose:up": "docker-compose up -d --build",
     "compose:down": "docker-compose down --remove-orphans",
-    "test": "jest"
+    "test": "npx jest ./*.test.tsx"
   },
   "dependencies": {
     "react": "^18.0.0",
