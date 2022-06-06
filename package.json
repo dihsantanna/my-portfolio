@@ -12,6 +12,7 @@
     "test": "npx jest ./*.test.tsx"
   },
   "dependencies": {
+    "@headlessui/react": "^1.6.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },

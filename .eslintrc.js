@@ -58,14 +58,6 @@ module.exports = {
         ignoreRestSiblings: true,
       },
     ],
-    'max-lines-per-function': [
-      'error',
-      {
-        max: 20,
-        skipBlankLines: true,
-        skipComments: true,
-      },
-    ],
     'max-len': [
       'error',
       100,
