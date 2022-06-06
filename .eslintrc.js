@@ -37,6 +37,7 @@ module.exports = {
           js: 'never',
           tsx: 'never',
           ts: 'never',
+          svg: 'always'
         },
       },
     ],
