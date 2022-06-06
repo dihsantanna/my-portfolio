@@ -27,10 +27,10 @@ describe('Testando componente <DropdownMenu />', () => {
     fireEvent.click(menuBtnOpen)
 
     const menuLinks = await  Promise.all([
-      waitFor(() => screen.findByRole('link', {name: /inicio/i})),
-      waitFor(() => screen.findByRole('link', {name: /sobre/i})),
-      waitFor(() => screen.findByRole('link', {name: /projetos/i})),
-      waitFor(() => screen.findByRole('link', {name: /curriculo/i}))
+      waitFor(() => screen.findByRole('menuitem', { name: /inicio/i })),
+      waitFor(() => screen.findByRole('menuitem', { name: /sobre/i })),
+      waitFor(() => screen.findByRole('menuitem', { name: /projetos/i })),
+      waitFor(() => screen.findByRole('menuitem', { name: /curriculo/i }))
     ]);
 
     menuLinks.forEach((link) => {
@@ -39,23 +39,28 @@ describe('Testando componente <DropdownMenu />', () => {
   })
 
   it('Verifica se ao clicar no botão de fechar(X) menu é fechado', async () => {
-    const menuBtnOpen = await waitFor(() => screen.findByTestId(dropdownBtnOpen));
+    let menuBtnOpen: HTMLElement | null = await waitFor(() => screen.findByTestId(dropdownBtnOpen));
 
     fireEvent.click(menuBtnOpen)
 
-    const menuOpened = await waitFor(() => screen.findByTestId(dropdownMenu))
+    let menuOpened: HTMLElement | null = await waitFor(() => screen.findByTestId(dropdownMenu))
+    menuBtnOpen = screen.queryByTestId(dropdownBtnOpen)
 
     expect(menuOpened).toBeInTheDocument();
     expect(menuBtnOpen).not.toBeInTheDocument();
 
-    const menuBtnClose = await waitFor(() => screen.findByTestId(dropdownBtnClose))
+    let menuBtnClose: HTMLElement | null = await waitFor(() => screen.findByTestId(dropdownBtnClose))
 
     expect(menuBtnClose).toBeInTheDocument();
 
     fireEvent.click(menuBtnClose)
 
+    menuOpened = screen.queryByTestId(dropdownMenu)
+    menuBtnClose = screen.queryByTestId(dropdownBtnClose)
+    menuBtnOpen = screen.queryByTestId(dropdownBtnOpen)
+
     expect(menuOpened).not.toBeInTheDocument();
     expect(menuBtnClose).not.toBeInTheDocument();
-    expect(menuOpened).toBeInTheDocument();
+    expect(menuBtnOpen).toBeInTheDocument();
   })
 })
