@@ -6,8 +6,8 @@ import dropdownClose from '../assets/dropdown-close.svg';
 
 export function DropdownMenu() {
   return (
-    <nav className={`fixed right-3 top-3 flex items-center w-[313px + 30px + 12px]
-    bg-grafite-700 rounded-l-md`}>
+    <nav className={`flex fixed right-3 top-3 items-center w-[313px + 30px + 12px]
+    bg-grafite-700 rounded-l-md md:hidden`}>
       <Menu>
         {({ open }: { open: boolean }) => (
           <>
