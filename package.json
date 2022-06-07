@@ -9,7 +9,7 @@
     "lint": "npx eslint ./src --ext .{ts,js,tsx,jsx}",
     "compose:up": "docker-compose up -d --build",
     "compose:down": "docker-compose down --remove-orphans",
-    "test": "npx jest ./*.test.tsx"
+    "test": "npx jest ./*.test.tsx --detectOpenHandles"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.4",
