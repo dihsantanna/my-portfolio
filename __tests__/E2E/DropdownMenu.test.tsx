@@ -21,7 +21,7 @@ describe('Testando componente <DropdownMenu />', () => {
     expect(menuOpened).toBeInTheDocument();
   })
 
-  it(`Verifica se menu contém os links com os nomes ${menuTexts}`, async () => {
+  it(`Verifica se menu contém os links com os nomes ${menuTexts} com os hrefs corretos`, async () => {
     const menuBtnOpen = screen.queryByTestId(dropdownBtnOpen);
 
     fireEvent.click(menuBtnOpen as HTMLElement);
