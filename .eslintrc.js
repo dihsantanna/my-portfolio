@@ -37,6 +37,7 @@ module.exports = {
           js: 'never',
           tsx: 'never',
           ts: 'never',
+          svg: 'always'
         },
       },
     ],
@@ -55,14 +56,6 @@ module.exports = {
       {
         argsIgnorePattern: '^_',
         ignoreRestSiblings: true,
-      },
-    ],
-    'max-lines-per-function': [
-      'error',
-      {
-        max: 20,
-        skipBlankLines: true,
-        skipComments: true,
       },
     ],
     'max-len': [

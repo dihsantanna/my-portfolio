@@ -9,7 +9,8 @@ module.exports = {
         500: '#2EACBE',
       },
       grafite: {
-        700: '#211D1A',
+        900: '#211D1A',
+        700: '#211D1A2B',
         200: '#9B9B9B',
       },
     },
@@ -17,5 +18,5 @@ module.exports = {
       poppins: ['Poppins', 'sans-serif'],
     },
   },
-  plugins: [],
+  plugins: [require('@headlessui/react')],
 };
