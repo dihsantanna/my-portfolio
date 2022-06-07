@@ -22,8 +22,8 @@ Este portfolio foi criado com o intuito de ser simples porém moderno, de forma 
 Decidi aplicar o TDD como metodo de desenvolvimento para ter um código mais confiável. O projeto está separado em etapas e antes de cada uma delas é implementado o teste da `feature` a ser criada.
 As etapas são as seguintes:
 
-- [ ] Criar menu dropdonw para aparelhos mobile de resolução até (`412x914`) com os botões `Inicio`, `Sobre` e `Projetos`, `Curriculo`
-- [ ] Criar NavBar com os botões `Inicio`, `Sobre` e `Projetos`
+- [x] Criar menu dropdonw para aparelhos mobile de resolução minima de (`375x667`) com os botões `Inicio`, `Sobre` e `Projetos`, `Curriculo`
+- [ ] Criar NavBar com os botões `Inicio`, `Sobre`, `Projetos` e `Curriculo`
 - [ ] Criar um `footer` com o texto `Feito com ♥ por Diogo Sant’Anna`
 - [ ] Criar seção `Inicio`:
     - [ ] Apresentação com o texto `Olá! Eu Sou Diogo`
