@@ -4,5 +4,5 @@
 @tailwind utilities;
 
 * {
-  @apply font-poppins bg-grafite-700 text-grafite-200
+  @apply font-poppins bg-grafite-900 text-grafite-200;
 }
