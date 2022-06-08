@@ -89,4 +89,9 @@ module.exports = {
     'sonarjs/prefer-single-boolean-return': ['error'],
     'sonarjs/no-inverted-boolean-check': ['error'],
   },
+  settings: {
+    react: {
+        version: 'detect',
+    },
+  }
 };
