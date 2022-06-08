@@ -24,7 +24,7 @@ As etapas são as seguintes:
 
 - [x] Criar menu dropdonw para aparelhos mobile de resolução minima de (`375x667`) com os botões `Inicio`, `Sobre` e `Projetos`, `Curriculo`
 - [x] Criar NavBar com os botões `Inicio`, `Sobre`, `Projetos` e `Curriculo`
-- [ ] Criar um `footer` com o texto `Feito com ♥ por Diogo Sant’Anna`
+- [x] Criar um `footer` com o texto `Feito com ♥ por Diogo Sant’Anna`
 - [ ] Criar seção `Inicio`:
     - [ ] Apresentação com o texto `Olá! Eu Sou Diogo`
     - [ ] Adicionar minha foto
