@@ -1,13 +1,13 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import { screen, render, waitFor, fireEvent } from '@testing-library/react';
-import { DropdownMenu } from '../../src/components/DropdownMenu';
+import { App } from '../../src/App';
 
 import { menuTexts } from '../utils/menuTexts';
 import { dropdownBtnClose, dropdownBtnOpen, dropdownMenu }  from '../utils/data-testId';
 
 describe('Testando componente <DropdownMenu />', () => {
-  beforeEach(() => render(<DropdownMenu />));
+  beforeEach(() => render(<App />));
 
   it('Verifica se componente renderiza', () => {
     const menuBtnOpen = screen.queryByTestId(dropdownBtnOpen);
