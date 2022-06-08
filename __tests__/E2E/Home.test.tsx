@@ -19,8 +19,9 @@ describe('Testando componente <Home />', () => {
     expect(home).toHaveAttribute('id', 'inicio')
   })
 
-  it('Verifica se componente possui elemento h1 com texto "Olá!Eu Sou Diogo"', () => {
-    const h1 = screen.queryByRole('heading', { level: 1, name: /Olá!Eu Sou Diogo/i });
-    expect(h1).toBeInTheDocument();
+  it('Verifica se componente possui um h1 com texto "Olá!Eu Sou Diogo"', () => {
+  const h1 = screen.queryByRole('heading',
+    { level: 1, name: /Olá!([\w ]*)? Diogo$/ }) as HTMLElement;
+    expect(h1).toHaveTextContent('Olá!Eu Sou Diogo');
   })
 })
