@@ -7,7 +7,9 @@ export function Home() {
       data-testid="home-section"
       className="h-[795px] w-full md:h-[817px]"
     >
-      Home
+      <h1>
+        Olá!<br/>Eu Sou Diogo
+      </h1>
     </section>
   );
 }
