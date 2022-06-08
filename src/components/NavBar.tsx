@@ -8,7 +8,7 @@ export function NavBar() {
       className={`hidden md:flex max-w-[60vw] w-[648px] h-10 fixed right-0
         top-[25px] items-center pl-6 rounded-l-md bg-grafite-700`}
     >
-      <div
+      <section
         className="w-[428px] h-6 flex justify-between items-center"
       >
       {
@@ -29,7 +29,7 @@ export function NavBar() {
             {link}
           </a>
         ))}
-      </div>
+      </section>
     </nav>
   );
 }
