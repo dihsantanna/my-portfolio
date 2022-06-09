@@ -24,4 +24,9 @@ describe('Testando componente <Home />', () => {
     { level: 1, name: /Olá!([\w ]*)? Diogo$/ }) as HTMLElement;
     expect(h1).toHaveTextContent('Olá!Eu Sou Diogo');
   })
+
+  it('Verifica se componente renderiza foto o AltText "foto-do-Diogo"', () => {
+    const img = screen.queryByAltText(/foto-do-Diogo/);
+    expect(img).toBeInTheDocument();
+  })
 })
