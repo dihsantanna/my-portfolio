@@ -29,4 +29,13 @@ describe('Testando componente <Home />', () => {
     const img = screen.queryByAltText(/foto-do-Diogo/);
     expect(img).toBeInTheDocument();
   })
+
+  it('Verifica se componente renderiza um h3 com o texto "Desenvolvedor Web FullStack"', () => {
+    const text = screen.queryByRole('heading', {
+      level: 3,
+      name: /Desenvolvedor Web FullStack/
+    })
+
+    expect(text).toBeInTheDocument();
+  })
 })
