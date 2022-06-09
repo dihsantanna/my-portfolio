@@ -26,7 +26,7 @@ As etapas são as seguintes:
 - [x] Criar NavBar com os botões `Inicio`, `Sobre`, `Projetos` e `Curriculo`
 - [x] Criar um `footer` com o texto `Feito com ♥ por Diogo Sant’Anna`
 - [ ] Criar seção `Inicio`:
-    - [ ] Apresentação com o texto `Olá! Eu Sou Diogo`
+    - [x] Apresentação com o texto `Olá! Eu Sou Diogo`
     - [ ] Adicionar minha foto
     - [ ] Adicionar texto `Desenvolvedor Web FullStack`
     - [ ] Criar area com meus links do `LinkedIn`, `GitHub`, `WhatsApp` e `Email`
