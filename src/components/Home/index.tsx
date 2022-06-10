@@ -1,5 +1,6 @@
 import React from 'react';
 import myPhoto from '../../assets/foto-do-diogo.png';
+import ContactMe from './ContactMe';
 
 export function Home() {
   return (
@@ -28,14 +29,14 @@ export function Home() {
             </h1>
           </div>
             <h3
-              className="text-[1.35rem] mb-4 md:text-2xl lg:text-[34px]"
+              className="text-[1.35rem] mb-4 md:text-2xl lg:text-[34px] md:self-start"
             >
               Desenvolvedor Web FullStack
             </h3>
         </div>
         <div
           className={`row-span-3 md:row-span-2 md:flex md:justify-end md:items-center
-            lg:row-span-3`}
+          lg:row-span-3`}
         >
           <img
             src={myPhoto}
@@ -43,6 +44,7 @@ export function Home() {
             className="w-[324px] md:w-[400px] md:mb-20 lg:w-[500px] lg:mb-24"
           />
         </div>
+        <ContactMe />
       </div>
     </section>
   );
