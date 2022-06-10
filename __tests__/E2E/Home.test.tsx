@@ -38,4 +38,17 @@ describe('Testando componente <Home />', () => {
 
     expect(text).toBeInTheDocument();
   })
+
+  it('Verifica se componente renderiza area com links para meu "LinkedIn", "GitHub" e "Email"', () => {
+    const myLinks = [
+      screen.queryByRole('link', { name: /@diogo-santanna/ }),
+      screen.queryByRole('link', { name: /@dihsantanna/ }),
+      screen.queryByRole('link', { name: /diogosantanna08@gmail.com/ })
+    ]
+
+    myLinks.forEach( link => {
+      expect(link).toBeInTheDocument();
+    })
+
+  })
 })
