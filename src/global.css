@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  @apply font-poppins bg-grafite-900 text-grafite-200;
+html {
+  @apply scroll-smooth
+}
+
+body {
+  @apply h-[2500px] relative font-poppins bg-grafite-900 text-grafite-200;
 }

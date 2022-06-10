@@ -5,10 +5,10 @@ export function NavBar() {
   return (
     <nav
       data-testid="navbar-menu"
-      className={`hidden md:flex max-w-[60vw] w-[648px] h-10 fixed right-0
-        top-[25px] items-center pl-6 rounded-l-md bg-grafite-700`}
+      className={`hidden md:flex max-w-[60vw] min-w-[46vw] w-[648px] h-10 fixed right-0
+        top-[25px] items-center rounded-l-md bg-grafite-700 justify-center`}
     >
-      <div
+      <section
         className="w-[428px] h-6 flex justify-between items-center"
       >
       {
@@ -29,7 +29,7 @@ export function NavBar() {
             {link}
           </a>
         ))}
-      </div>
+      </section>
     </nav>
   );
 }
