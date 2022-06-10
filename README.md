@@ -27,9 +27,9 @@ As etapas são as seguintes:
 - [x] Criar um `footer` com o texto `Feito com ♥ por Diogo Sant’Anna`
 - [ ] Criar seção `Inicio`:
     - [x] Apresentação com o texto `Olá! Eu Sou Diogo`
-    - [ ] Adicionar minha foto
-    - [ ] Adicionar texto `Desenvolvedor Web FullStack`
-    - [ ] Criar area com meus links do `LinkedIn`, `GitHub`, `WhatsApp` e `Email`
+    - [x] Adicionar minha foto
+    - [x] Adicionar texto `Desenvolvedor Web FullStack`
+    - [ ] Criar area com meus links do `LinkedIn`, `GitHub` e `Email`
 - [ ] Criar carrousel de stacks
 - [ ] Criar seção `Sobre` contendo um breve texto sobre mim
 - [ ] Criar Seção `Projetos`:
