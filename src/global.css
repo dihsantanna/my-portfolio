@@ -8,5 +8,5 @@ html {
 }
 
 body {
-  @apply h-[2500px] relative font-poppins bg-grafite-900 text-grafite-200;
+  @apply min-h-[850px] max-h-[2500px] relative font-poppins bg-grafite-900 text-grafite-200;
 }
